@@ -1,0 +1,17 @@
+.beer-card {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  height: 450px;
+  transition: 0.3s;
+}
+
+.beer-card:hover {
+  box-shadow: 0px 0px 5px #23272B;
+}
+
+img{
+  width: 100%;
+}
+
+.price{
+  font-size: 1.1em;
+}

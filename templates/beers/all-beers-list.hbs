@@ -1,0 +1,27 @@
+{{>header}}
+<main class="container">
+  <div class="jumbotron my-5 py-4">
+    <a href="#/allBeersGrid" class="btn btn-dark px-4 mx-1"><i class="fa fa-th-large"></i></a>
+    <a href="#/allBeersList" class="btn btn-dark px-4"><i class="fa fa-bars"></i></a>
+    <table class="table table-hover table-white rounded m-3">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Brewery</th>
+          <th scope="col">Country</th>
+          <th scope="col">Style</th>
+          <th scope="col">Abv</th>
+          <th scope="col">Votes</th>
+          <th scope="col">Rating</th>
+          <th scope="col">Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each beers}}
+          {{>beerRow}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</main>
+{{>footer}}

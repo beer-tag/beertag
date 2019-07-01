@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@font-face {
+  font-family: "Gill Sans Ultra Bold";
+  src: url("../fonts/GillSansUltraBold.ttf");
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  min-height: 65vh;
+  transition: 0.5s;
+}
+
+footer {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.row {
+  margin: 0 !important;
+}

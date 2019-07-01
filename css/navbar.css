@@ -1,0 +1,95 @@
+#cheers-beers, #login {
+  color: #020001;
+  text-decoration: none;
+  font-family: 'Gill Sans Ultra Bold', sans-serif;
+  display: inline-block;
+  font-size: 2.3em;
+  line-height: 80px;
+}
+
+#cheers-beers:hover {
+  text-shadow: 0px 0px 2px #000;
+  transition: 0.2s;
+  font-size: 2.35em;
+}
+
+#cheers-beers:active {
+  font-size: 2.25em;
+}
+
+#login {
+  font-family: 'Roboto', sans-serif;
+  transition: 0.2s;
+}
+
+#login:hover, #login>a {
+  text-shadow: 1px 1px 1px #000;
+}
+
+#login:active, #login>a {
+  font-size: 2.1em;
+}
+
+li.nav-item {
+  text-align: center;
+}
+
+a.nav-link {
+  font-size: 1.5em;
+  color: #fff !important;
+  transition: 0.2s;
+  width: 180px;
+  line-height: 30px;
+}
+
+a.nav-link:hover {
+  color: #fff;
+  font-size: 1.7em;
+  text-shadow: 0px 0px 3px #EDB324;
+}
+
+a.nav-link:active {
+  font-size: 1.5em;
+}
+
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform-origin: top;
+  animation-fill-mode: forwards;
+  transform: scale(0.9, 0.7) translateY(-20px);
+  display: block;
+  transition: 0.3s;
+}
+
+.show>.dropdown-menu {
+  transform: scale(1, 1) translateY(0);
+  width: 200px;
+  min-height: 25vh;
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.dropdown-menu>option {
+  color: #fff;
+  font-size: 1.3em;
+  height: 30px;
+}
+
+.dropdown-menu>a.dropdown-item {
+  color: #fff;
+  font-size: 1.4em;
+}
+
+.dropdown-menu>a.dropdown-item:hover {
+  color: #000;
+  font-weight: 900;
+  font-size: 1.4em;
+}
+
+.dropdown-menu>option:hover {
+  font-size: 1.5em;
+  cursor: pointer;
+  text-shadow: 0px 0px 1px #EDB324;
+}

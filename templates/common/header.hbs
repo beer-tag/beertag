@@ -1,0 +1,87 @@
+<header>
+    <div class="container mt-3 mb-3 row">
+        <div class="col-10 ml-5">
+            <a href="/" id="cheers-beers">
+                <span>CHEERS BEERS !</span>
+            </a>
+        </div>
+        {{#if loggedIn}}
+        <div class="float-right h-100">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu1"
+                    data-toggle="dropdown">Welcome, {{username}}</button>
+
+                <li class="nav-item dropdown dropdown-menu p-2 align-content-start">
+                    <a class="dropdown-item rounded" href="#">Add beer</a>
+                    <a class="dropdown-item rounded" href="#"></i> Rated Beers</a>
+                    <a class="dropdown-item rounded" href="#">Wished Beers</a>
+                    <a class="dropdown-item rounded" href="#/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </li>
+            </div>
+        </div>
+        {{else}}
+        <a href="#/login" class="h-100" id="login">
+            <span>Login <i class="fas fa-sign-in-alt"></i></span>
+        </a>
+        {{/if}}
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#/allBeersGrid">ALL BEERS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" id="drop1" data-toggle="dropdown" class="nav-link" role="button">BY COUNTRY<span
+                            class="caret"></span></a>
+                    <select role="menu" class="mdb-select md-form dropdown-menu mt-2 p-2" multiple>
+                        <option value="1">USA</option>
+                        <option value="2">Germany</option>
+                        <option value="3">France</option>
+                        <option value="4">Poland</option>
+                        <option value="5">Japan</option>
+                    </select>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" id="drop1" data-toggle="dropdown" class="nav-link" role="button">BY STYLE<span
+                            class="caret"></span></a>
+                    <select role="menu" class="mdb-select md-form dropdown-menu mt-2 p-2" multiple>
+                        <option value="1">style1</option>
+                        <option value="2">style2</option>
+                        <option value="3">style3</option>
+                        <option value="4">style4</option>
+                        <option value="5">style5</option>
+                    </select>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" id="drop1" data-toggle="dropdown" class="nav-link" role="button">BY TAGS<span
+                            class="caret"></span></a>
+                    <select role="menu" class="mdb-select md-form dropdown-menu mt-2 p-2" multiple>
+                        <option value="1">#tag1</option>
+                        <option value="2">#tag2</option>
+                        <option value="3">#tag3</option>
+                        <option value="4">#tag4</option>
+                        <option value="5">#tag5</option>
+                    </select>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" id="drop1" data-toggle="dropdown" class="nav-link" role="button">BY COLOR<span
+                            class="caret"></span></a>
+                    <select role="menu" class="mdb-select md-form dropdown-menu mt-2 p-2" multiple>
+                        <option value="1">color1</option>
+                        <option value="2">color2</option>
+                        <option value="3">color3</option>
+                        <option value="4">color4</option>
+                        <option value="5">color5</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

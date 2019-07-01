@@ -1,0 +1,5 @@
+{
+  "globalDependencies": {
+    "popper.js": "registry:dt/popper.js#0.4.0+20161005184000"
+  }
+}

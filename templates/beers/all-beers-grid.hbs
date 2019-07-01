@@ -1,0 +1,13 @@
+{{>header}}
+<main class="container">
+  <div class="jumbotron my-5 py-4">
+    <a href="#/allBeersGrid" class="btn btn-dark px-4 mx-1"><i class="fa fa-th-large"></i></a>
+    <a href="#/allBeersList" class="btn btn-dark px-4"><i class="fa fa-bars"></i></a>
+    <div class="row justify-content-center">
+      {{#each beers}}
+      {{>beerCard}}
+      {{/each}}
+    </div>
+  </div>
+</main>
+{{>footer}}
